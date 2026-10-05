@@ -1,0 +1,43 @@
+{
+    "name": "tyhpdef/hamcrest-hamcrest-php-impl",
+    "description": "Implementation package for tyhpdef/hamcrest-hamcrest-php. Require tyhpdef/hamcrest-hamcrest-php, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "3.0.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/php-ext-dom": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/hamcrest-hamcrest-php"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "hamcrest/hamcrest-php": "3.0.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/php-ext-dom": "@dev"
+    }
+}
